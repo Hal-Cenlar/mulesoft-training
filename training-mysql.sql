@@ -1,6 +1,6 @@
 CREATE DATABASE IF NOT EXISTS training 
-  DEFAULT CHARACTER SET latin1
-  DEFAULT COLLATE utf8_general_ci;
+  DEFAULT CHARACTER SET utf8
+  
 
 USE training;
 
@@ -23,7 +23,7 @@ create table IF NOT EXISTS american (
   toAirport varchar(5),
   fromAirport varchar(5),
   takeOffDate date,
-  price tinyint,
+  price smallint,
   planeType varchar(80),
   seatsAvailable tinyint, 
   totalSeats tinyint,
@@ -65,7 +65,7 @@ create table IF NOT EXISTS flights (
 	toAirport varchar(5),
 	fromAirport varchar(5),
 	takeOffDate date,
-	price tinyint,
+	price smallint,
 	planeType varchar(80),
 	seatsAvailable varchar(80)
 );
